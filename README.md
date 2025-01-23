@@ -1,12 +1,12 @@
 ## Python Sudoku Solver
 
-#### Overview:
+### Overview:
 
 My final project is a sudoku solver. This sudoku solver takes in a sudoku problem and solves it within seconds.
 
 Sudoku is a number puzzle that has a 9x9 cell grid. The grid is grouped into rows, columns, and blocks. A block consists of 3x3 cells, so there are 9 blocks in each problem (9x9 cell grid). In each section (row, column, and block) there are 9 cells. The rule is to fit the numbers 1 through 9 in each of those 9 cells of each section without repeating any numbers. Given a problem, which has some cells filled in and others left empty, the objective is to fill the empty cells by following this rule. The solution should have the numbers 1 through 9 once each in every row, column, and block.
 
-#### Implementation:
+### Implementation:
 
 The sudoku solver is written in the file project.py. Problems are stored as individual lines in a text file called problem.txt. Each problem is expressed as a single line in the file. Here is an example:
 
@@ -28,7 +28,7 @@ This sudoku solver has been tested with the daily (easy, medium and hard) sudoku
 
 This project implements a design choice to solve the problem efficiently. The solve() function finds usable numbers for each empty cell and tries out each of the numbers, instead of trying out all numbers from 1 to 9. This contributes to reducing the time to solve the problem.
 
-#### Future Work:
+### Future Work:
 
 This solver can still be improved. One possible improvement is to speed up the solver further by targeting the empty cells with fewer usable number choices earlier, rather than targeting empty cells at random. Another is to write a function that gives a hint to the user when solving the problem themselves. This can be done by telling the user the cell with the least number of usable number choices. Additionally, it would be nice to implement this solver as a web app, so the user can enter a problem and see the solution and hints for it.
 
